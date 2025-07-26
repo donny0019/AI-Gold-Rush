@@ -1,0 +1,9 @@
+# Allow all web crawlers access to the site
+User-agent: *
+Allow: /
+
+# Disallow crawlers from the redirect page
+Disallow: /redirect.html
+
+# Point crawlers to the sitemap for a list of all important pages
+Sitemap: https://air-gold-rush.netlify.app/sitemap.xml
