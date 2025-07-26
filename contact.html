@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | AI Insights Collective</title>
+    <meta name="description" content="Get in touch with AI Insights Collective. We'd love to hear from you for collaborations, questions, or feedback.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #050214;
+            --primary: #8a2be2;
+            --primary-light: #b362ff;
+            --text-light: #f0e9ff;
+            --text-muted: #9d94b8;
+            --card-bg: rgba(20, 10, 40, 0.6);
+            --border-color: rgba(138, 43, 226, 0.3);
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.7;
+            background-image: radial-gradient(circle at 25% 25%, rgba(138, 43, 226, 0.15) 0%, transparent 25%), radial-gradient(circle at 75% 75%, rgba(0, 245, 212, 0.15) 0%, transparent 25%);
+        }
+        .header {
+            padding: 120px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-family: 'Sora', sans-serif;
+            font-weight: 800;
+            background: linear-gradient(90deg, #ffffff, var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            max-width: 700px;
+            margin: 16px auto 0;
+            color: var(--text-muted);
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px 80px;
+        }
+        .form-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            backdrop-filter: blur(20px);
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            background-color: rgba(0,0,0,0.3);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-light);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .submit-btn:hover {
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4);
+            transform: translateY(-2px);
+        }
+        .footer-nav {
+            text-align: center;
+            margin-top: 60px;
+        }
+        .footer-nav a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Contact Us</h1>
+        <p>Have a question, proposal, or just want to talk about AI? We'd love to hear from you.</p>
+    </header>
+
+    <main class="container">
+        <section class="form-card">
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+        <div class="footer-nav">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </main>
+</body>
+</html>

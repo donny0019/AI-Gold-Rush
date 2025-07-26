@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | AI Insights Collective</title>
+    <meta name="description" content="Learn about AI Insights Collective, our mission to demystify artificial intelligence, and our team of strategists dedicated to exploring the future of AI in business.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-dark: #050214;
+            --primary: #8a2be2;
+            --primary-light: #b362ff;
+            --secondary: #00f5d4;
+            --text-light: #f0e9ff;
+            --text-muted: #9d94b8;
+            --card-bg: rgba(20, 10, 40, 0.6);
+            --border-color: rgba(138, 43, 226, 0.3);
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.7;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at 25% 25%, rgba(138, 43, 226, 0.15) 0%, transparent 25%), radial-gradient(circle at 75% 75%, rgba(0, 245, 212, 0.15) 0%, transparent 25%);
+        }
+        .header {
+            padding: 120px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .header h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-family: 'Sora', sans-serif;
+            font-weight: 800;
+            background: linear-gradient(90deg, #ffffff, var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            max-width: 700px;
+            margin: 16px auto 0;
+            color: var(--text-muted);
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 80px;
+        }
+        .content-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            backdrop-filter: blur(20px);
+        }
+        .content-card h2 {
+            font-family: 'Sora', sans-serif;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 24px;
+            border-left: 4px solid var(--primary);
+            padding-left: 16px;
+        }
+        .content-card p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .team-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+            flex-shrink: 0;
+        }
+        .team-bio h3 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 8px;
+        }
+        .team-bio span {
+            color: var(--secondary);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .footer-nav {
+            text-align: center;
+            margin-top: 60px;
+        }
+        .footer-nav a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        @media (max-width: 600px) {
+            .team-section { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>About Us</h1>
+        <p>The minds behind the mission to decode the future of AI in business.</p>
+    </header>
+
+    <main class="container">
+        <section class="content-card">
+            <h2>Our Mission</h2>
+            <p><strong>AI Insights Collective</strong> was founded on a simple principle: the monumental shifts driven by artificial intelligence should be accessible to everyone, not just a select few in Silicon Valley. We believe that real opportunity lies at the intersection of human creativity and machine intelligence.</p>
+            <p>Our goal is to cut through the hype and provide clear, actionable, and realistic guidance for entrepreneurs, creatives, and professionals looking to leverage AI. We focus on practical applications and sustainable business models, empowering you to build something of value in the new digital economy.</p>
+
+            <div class="team-section">
+                <img src="https://i.pravatar.cc/120?u=jane_doe" alt="Portrait of Jane Doe" class="team-avatar">
+                <div class="team-bio">
+                    <h3>Jane Doe</h3>
+                    <span>Lead AI Strategist & Founder</span>
+                    <p>Jane is a technology analyst with over a decade of experience helping businesses navigate digital transformations. Fascinated by the creative potential of generative AI, she founded AI Insights Collective to document and share the emerging strategies that are shaping the future of work.</p>
+                </div>
+            </div>
+        </section>
+        <div class="footer-nav">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </main>
+</body>
+</html>
